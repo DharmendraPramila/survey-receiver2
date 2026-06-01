@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Survey Data Received</title>
+
+<style>
+body{
+    font-family:Arial;
+    margin:40px;
+}
+
+.box{
+    border:1px solid #ccc;
+    padding:25px;
+    width:600px;
+}
+
+h1{
+    color:#003366;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>Survey Data Received</h1>
+
+<p><b>RID:</b> <span id="rid"></span></p>
+<p><b>A3:</b> <span id="a3"></span></p>
+<p><b>A4:</b> <span id="a4"></span></p>
+<p><b>UUID:</b> <span id="uuid"></span></p>
+<p><b>LIST:</b> <span id="list"></span></p>
+
+</div>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+document.getElementById("rid").innerHTML =
+params.get("rid") || "";
+
+document.getElementById("a3").innerHTML =
+params.get("a3") || "";
+
+document.getElementById("a4").innerHTML =
+params.get("a4") || "";
+
+document.getElementById("uuid").innerHTML =
+params.get("uuid") || "";
+
+document.getElementById("list").innerHTML =
+params.get("list") || "";
+
+</script>
+
+</body>
+</html>
