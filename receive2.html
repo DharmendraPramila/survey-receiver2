@@ -27,6 +27,7 @@ h1{
 <div class="box">
 
 <h1>Survey Data Received</h1>
+
 <p><b>PID:</b> <span id="pid"></span></p>
 <p><b>PName:</b> <span id="pname"></span></p>
 <p><b>Question:</b> <span id="quest"></span></p>
@@ -42,7 +43,6 @@ h1{
 
 const params = new URLSearchParams(window.location.search);
 
-
 document.getElementById("pid").innerHTML =
 params.get("pid") || "";
 
@@ -51,7 +51,7 @@ params.get("pname") || "";
 
 document.getElementById("quest").innerHTML =
 params.get("quest") || "";
-    
+
 document.getElementById("rid").innerHTML =
 params.get("rid") || "";
 
