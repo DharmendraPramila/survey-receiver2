@@ -29,6 +29,7 @@ h1{
 <h1>Survey Data Received</h1>
 <p><b>PID:</b> <span id="pid"></span></p>
 <p><b>PName:</b> <span id="pname"></span></p>
+<p><b>Question:</b> <span id="quest"></span></p>
 <p><b>RID:</b> <span id="rid"></span></p>
 <p><b>A3:</b> <span id="a3"></span></p>
 <p><b>A4:</b> <span id="a4"></span></p>
@@ -47,6 +48,9 @@ params.get("pid") || "";
 
 document.getElementById("pname").innerHTML =
 params.get("pname") || "";
+
+document.getElementById("quest").innerHTML =
+params.get("quest") || "";
     
 document.getElementById("rid").innerHTML =
 params.get("rid") || "";
